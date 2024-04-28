@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://<user>:<password>@localhost:27017/local?authSource=admin
+
+logging:
+  pattern:
+    console: "%d{yy-MM-dd HH:mm:ss} [%.8thread] %-5level %logger{32} - %msg%n"
+
+server:
+  tomcat:
+    threads:
+      max: 2000
